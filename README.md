@@ -1,35 +1,37 @@
-# The Citizen's Record — Website
+# The Citizen's Record — Legacy Static Source Archive
 
-A static, no-backend website. It can be deployed through any static host, including GitHub Pages, Netlify, Cloudflare Pages, or a conventional web server. No database, build step, or server-side code is required.
+This repository preserves an earlier static implementation of **The Citizen's Record**.
 
-## Structure
+## Status
 
-| Path | Purpose |
-|---|---|
-| `index.html`, `the-record.html`, `read-the-record.html`, `learn.html`, `toolkit.html`, `about.html`, `contact.html`, `updates.html` | Public site pages. |
-| `admin.html` | An unlinked drafting helper that formats a daily-log entry for manual insertion into `data/posts.js`. It does not provide login, storage, or publishing. |
-| `css/style.css` | Shared site styling. |
-| `js/main.js` | Navigation, active-link highlighting, filters, and daily-log rendering. |
-| `data/posts.js` | Daily-log source data. |
-| `assets/logo.svg` | Header and footer logo asset. |
+**LEGACY / SOURCE PRESERVATION — NOT THE CANONICAL PRODUCTION REPOSITORY**
 
-## Publishing model
+The canonical public/static site is now maintained in `Thomascallen16/The-Citizens-Record`.
+The canonical full-stack application is maintained in `Thomascallen16/citizens-record`.
 
-The site has no user-account system and no public posting mechanism. Publishing is performed by updating the source content, reviewing the change, and redeploying the static site.
+This repository is retained because it contains historical source material, page implementations, editorial content, styling, and assets that may be useful for provenance or selective recovery. Do not develop new production features here.
 
-## Updating the daily log
+## Preservation rules
 
-1. Open `data/posts.js`.
-2. Copy an existing entry block and insert the revised entry at the start of the `CR_POSTS` array.
-3. Update the date, type, title, summary, and optional links.
-4. Review the content and deploy the updated site.
+- Preserve the original source and its history.
+- Recover unique content only through deliberate review.
+- Do not treat this repository's deployment configuration as evidence that it is a production deployment.
+- Do not copy application/server functionality here merely because a feature has a similarly named page in the canonical site.
+- Verify primary sources and public factual claims before any recovered material becomes canonical.
 
-The homepage’s latest-update card and the Daily Log page are both generated from this data file.
+## Original static structure
 
-## Pre-launch checklist
+The preserved implementation includes public HTML pages, a shared stylesheet, JavaScript navigation/daily-log rendering, post data, logo assets, and an unlinked drafting helper. It requires no database or server-side runtime.
 
-- Configure the monitored contact route in `contact.html`, or replace the mailto behavior with an approved form service.
-- Confirm all footer and header social links point to the intended public profiles.
-- Replace illustrative bills, cases, articles, and video placeholders with reviewed, source-linked editorial material.
-- Add working media embeds only for published videos.
-- Verify every public factual claim against the editorial source record before deployment.
+## Deployment
+
+No independent production deployment is maintained from this legacy repository. Any historical GitHub Pages workflow should be treated as archival configuration rather than a production release path.
+
+## Relationship to the ecosystem
+
+- `The-Citizens-Record` — canonical public/static Citizen's Record site
+- `citizens-record` — canonical full-stack Citizen's Record application
+- `ProofFlow` — evidence/provenance instrument
+- `watchtower` — privacy/exposure instrument
+
+The repository naming and status follow the ecosystem rule: **repository identity must describe reality, and deployment must be verified rather than assumed.**
